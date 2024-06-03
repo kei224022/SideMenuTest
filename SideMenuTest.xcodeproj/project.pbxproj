@@ -20,6 +20,9 @@
 		5EB656762C0D903400CCFF4F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB656752C0D903400CCFF4F /* PostView.swift */; };
 		5EB656782C0D905E00CCFF4F /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB656772C0D905D00CCFF4F /* NewsView.swift */; };
 		5EB6567A2C0D908100CCFF4F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB656792C0D908100CCFF4F /* SettingView.swift */; };
+		5EB6567C2C0DA0BE00CCFF4F /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6567B2C0DA0BE00CCFF4F /* MapsView.swift */; };
+		5EB6567E2C0DAB9300CCFF4F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6567D2C0DAB9300CCFF4F /* MenuView.swift */; };
+		5EB656802C0DB24F00CCFF4F /* ApplicationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6567F2C0DB24F00CCFF4F /* ApplicationInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		5EB656752C0D903400CCFF4F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		5EB656772C0D905D00CCFF4F /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		5EB656792C0D908100CCFF4F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5EB6567B2C0DA0BE00CCFF4F /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
+		5EB6567D2C0DAB9300CCFF4F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		5EB6567F2C0DB24F00CCFF4F /* ApplicationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 			children = (
 				5EB6565B2C0D8E0900CCFF4F /* SideMenuTestApp.swift */,
 				5EB6565D2C0D8E0900CCFF4F /* ContentView.swift */,
+				5EB6567D2C0DAB9300CCFF4F /* MenuView.swift */,
+				5EB6567F2C0DB24F00CCFF4F /* ApplicationInfoView.swift */,
 				5EB656692C0D8E2B00CCFF4F /* SideMenuRowType.swift */,
 				5EB6566B2C0D8E5000CCFF4F /* MainTabView.swift */,
 				5EB6566D2C0D8E7700CCFF4F /* SideMenuView.swift */,
@@ -80,6 +88,7 @@
 				5EB656752C0D903400CCFF4F /* PostView.swift */,
 				5EB656772C0D905D00CCFF4F /* NewsView.swift */,
 				5EB656792C0D908100CCFF4F /* SettingView.swift */,
+				5EB6567B2C0DA0BE00CCFF4F /* MapsView.swift */,
 				5EB6565F2C0D8E0D00CCFF4F /* Assets.xcassets */,
 				5EB656612C0D8E0D00CCFF4F /* Preview Content */,
 			);
@@ -171,8 +180,11 @@
 				5EB6566E2C0D8E7700CCFF4F /* SideMenuView.swift in Sources */,
 				5EB656702C0D8E9D00CCFF4F /* SideMenu.swift in Sources */,
 				5EB656742C0D8FA700CCFF4F /* HomeView.swift in Sources */,
+				5EB6567E2C0DAB9300CCFF4F /* MenuView.swift in Sources */,
 				5EB6565C2C0D8E0900CCFF4F /* SideMenuTestApp.swift in Sources */,
+				5EB656802C0DB24F00CCFF4F /* ApplicationInfoView.swift in Sources */,
 				5EB656762C0D903400CCFF4F /* PostView.swift in Sources */,
+				5EB6567C2C0DA0BE00CCFF4F /* MapsView.swift in Sources */,
 				5EB6566C2C0D8E5000CCFF4F /* MainTabView.swift in Sources */,
 				5EB6567A2C0D908100CCFF4F /* SettingView.swift in Sources */,
 			);
