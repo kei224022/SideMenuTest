@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SideMenuTestApp: App {
+    @State static var presentSideMenu = false
     var body: some Scene {
         WindowGroup {
             ContentView()
+            //MainTabView()
         }
     }
 }
