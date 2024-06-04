@@ -8,35 +8,63 @@
 import SwiftUI
 
 struct ContentView: View {
-    /// メニューの開閉
-    @State var isMenuOpen = false
+    @State var selectedTag = 1
+    @State private var isMenuVisible = false
     
     var body: some View {
-        ZStack {
-            NavigationStack {
-                Text("ContentView")
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            Button {
-                                /// isMenuOpenの変化にアニメーションをつける
-                                withAnimation(.easeInOut(duration: 0.3)) {
-                                    isMenuOpen.toggle()
-                                }
-                            } label: {
-                                Image(systemName: "list.bullet.indent")
-                            }
+        ZStack{
+            NavigationStack{
+                TabView(selection: $selectedTag){
+                    SettingView()
+                        .tabItem{
+                            Label("Device", systemImage: "iphone.radiowaves.left.and.right")
+                        }
+                        .tag(1)
+                    
+                    MapsView()
+                        .tabItem{
+                            Label("UWB", systemImage: "airtag.radiowaves.forward")
+                        }
+                        .tag(2)
+                }
+                //.navigationTitle("UWB Indoor Navi")
+                .toolbar{
+                    ToolbarItem(placement: .cancellationAction){
+                        Button(action: {withAnimation{
+                            isMenuVisible.toggle()
+                        }}){
+                            Image(systemName:  "list.bullet.indent")
+                                .resizable()
+                                .scaledToFit()
+                            //.frame(width: 50, height: 50)
                         }
                     }
-            }
-            //MenuView(isOpen: $isMenuOpen)
-            if isMenuOpen {
-                            MenuView(isOpen: $isMenuOpen)
-                                .transition(.move(edge: .leading))
+                    
+                    ToolbarItem(){
+                        Text("UWB AR Indoor Navi")
+                    }
+                    
+                    ToolbarItem(placement: .confirmationAction){
+                        Button(action: {}){
+                            Image(systemName: "pencil.and.scribble")
+                                .resizable()
+                                .scaledToFit()
+                            
                         }
-        }
+                    }
+                }
+            }
+            // サイドメニュー
+                            if isMenuVisible {
+                                SideMenuView(isMenuVisible: $isMenuVisible)
+                                    .transition(.move(edge: .leading))
+                                    .zIndex(1) // メインコンテンツの上に表示
+                            }
+    }
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    @State var presentSideMenu = false
+//    ContentView(presentSideMenu: $presentSideMenu)
+//}
